@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موسسه آموزش عالی همگام</title>
+    <link rel="shortcut icon" href="./images/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/library.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ataMayel/Slider.js/slider.css">
+</head>
+
+<body>
+    <div class="search-div">
+        <div class="search-content">
+            <div class="title-bar">
+                <h2>جستجو</h2>
+                <button id="closeSearchBtn">
+                    <img src="./images/icons/close.svg" alt="close icon">
+                </button>
+            </div>
+            <form method="post">
+                <input type="search" id="search" placeholder="عبارت مورد نظر را وارد کنید" autofocus>
+                <button type="submit" class="btn btn-blue">جستجو</button>
+            </form>
+        </div>
+    </div>
+    <div class="cart-div" id="cart">
+        <div class="title-bar">
+            <h2 class="">سبد خرید</h2>
+            <button id="closeCartBtn"></button>
+        </div>
+        <div class="bag-content">
+            <img src="./images/icons/cart.svg" alt="bag icon">
+            <p>سبد خرید شما خالی است</p>
+        </div>
+    </div>
+    <main>
+        <div class="banner" data-aos="fade-down">
+            <a href="/">
+                <div class="cont">
+                    <p>شروع جشنواره ۵۰ درصدی تا آخر آبان</p>
+                </div>
+            </a>
+        </div>
+        <header data-aos="fade-down">
+            <nav class="cont navbar">
+                <div class="right">
+                    <img src="./images/LOGO.png" alt="hamgam logo" class="logo">
+                    <ul class="menu">
+                        <li><a href="/" class="active">صفحه اصلی</a></li>
+                        <li><a href="#courses">دوره ها</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <ul>
+                        <li>
+                            <button title="جستجو" class="searchBtn">
+                                <img src="./images/icons/search.svg" alt="search icon">
+                            </button>
+                        </li>
+                        <li>
+                            <button title="سبد خرید" class="cartBtn">
+                                <img src="./images/icons/cart.svg" alt="bag icon">
+                            </button>
+                        </li>
+                        <li><a href="/" class="btn btn-blue">ورود / ثبت نام</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="mobile">
+                <div class="brand">
+                    <div>
+                        <button class="collaps" id="collaps" title="منو"></button>
+                    </div>
+                    <a href="/" class="logo-m" title="موسسه آموزش عالی همگام">
+                        <img src="./images/LOGO.png" alt="hamgam logo" class="logo">
+                    </a>
+                    <ul class="options">
+                        <li>
+                            <button title="جستجو" class="searchBtn">
+                                <img src="./images/icons/search.svg" alt="search icon">
+                            </button>
+                        </li>
+                        <li>
+                            <button title="سبد خرید" class="cartBtn">
+                                <img src="./images/icons/cart.svg" alt="bag icon">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="mobile-menu" id="mobile-menu">
+                    <li><a href="/" class="active">صفحه اصلی</a></li>
+                    <li><a href="#courses">دوره ها</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                    <li><a href="/" class="btn btn-blue">ورود / ثبت نام</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="first cont">
+            <article data-aos="fade-left">
+                <span class="tag" id="element">
+                    <!-- آموزشگاه آنلاین زبان انگلیسی -->
+                </span>
+                <h1>
+                    آموزش آنلاین زبان با
+                    <br>
+                    <span class="focus">
+                        موسسه آموزش عالی همگام
+                    </span>
+                </h1>
+                <p>
+                    ارائه کلاس های آنلاین وحضوری بنا به انتخاب دانشجویان در تمامی رده سنی سطوح و ساعات مختلف
+                </p>
+                <div class="btns">
+                    <a class="btn btn-blue" href="/">همین حالا یاد بگیر</a>
+                    <a class="btn btn-outline-yellow" href="/">بیشتر بدانید</a>
+                </div>
+            </article>
+            <aside data-aos="fade-up">
+                <img src="./images/girl-1.png" alt="student picture">
+            </aside>
+        </section>
+        <section class="why" id="about">
+            <aside class="bg-div" data-aos="fade-left" data-aos-offset="400">
+                <img src="./images/girl-2.png" alt="student picture">
+            </aside>
+            <div class="cont">
+                <article>
+                    <h2 id="element2" data-aos="fade-up">
+                        چرا باید <span class="imp">همگام</span> را انتخاب کنیم؟
+                    </h2>
+                    <div class="boxes">
+                        <div class="box hover" data-aos="fade-up" data-aos-offset="300">
+                            <h3 class="r1">صرفه جویی در زمان</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است</p>
+                        </div>
+                        <div class="box hover" data-aos="fade-up" data-aos-offset="300" data-aos-delay="150">
+                            <h3 class="r2">مدرک معتبر</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است</p>
+                        </div>
+                        <div class="box hover" data-aos="fade-up" data-aos-offset="150" data-aos-delay="300">
+                            <h3 class="r3">یادگیری در همه جا</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است</p>
+                        </div>
+                        <div class="box hover" data-aos="fade-up" data-aos-offset="150" data-aos-delay="450">
+                            <h3 class="r4">پشتیبانی حرفه ای </h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="courses" id="courses" data-aos="fade-up">
+            <div class="cont">
+                <div class="title">
+                    <h2>دوره های آموزشی</h2>
+                    <a href="/">همه دوره های ما <img src="./images/icons/light-arrow.svg" alt="arrow icon"></a>
+                </div>
+                <div class="course-cont">
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-2.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-2.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-2.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-2.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="course-slider" class="courses-mobile slider" dir="ltr">
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course hover" title="مربیگری درجه ۲ زبان انگلیسی">
+                        <img src="./images/course-poster-1.png" alt="مربیگری درجه ۲ زبان انگلیسی توسط محمد لیلا محمدی">
+                        <div class="course-details">
+                            <h3>مربیگری درجه ۲ زبان انگلیسی</h3>
+                            <h4>توسط محمد لیلا محمدی</h4>
+                            <strong class="price">
+                                ۵۴۰,۰۰۰ تومان
+                            </strong>
+                            <button class="cart-btn" title="افزودن به سبد خرید">
+                                <img src="./images/icons/cart-white.svg" alt="cart icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teachers">
+            <div class="cont">
+                <div class="title">
+                    <h2>بهترین اساتید ما</h2>
+                </div>
+                <div class="teachers-cont">
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                    <div class="teacher hover" data-aos="fade-up" data-aos-offset="300">
+                        <span>تایید شده</span>
+                        <img src="./images/teacher.png" alt="teacher profile">
+                        <h3>استاد مریم موسوی</h3>
+                        <div class="starts">
+                            <img src="./images/stars.png" alt="starts picture">
+                        </div>
+                        <p>برگزاری کلاس های آنلاین و حضوری
+                            دارای ده سال سابقه کار</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" data-aos="fade-up">
+            <div class="cont">
+                <h2>نظرات دانشجویان
+                    <div class="review-btns">
+                        <button id="reviewNext">
+                            <img src="./images/icons/arrow-left.svg" alt="left arrow">
+                        </button>
+                        <button id="reviewPerv">
+                            <img src="./images/icons/arrow-right.svg" alt="right arrow">
+                        </button>
+                    </div>
+                </h2>
+
+                <div class="review-cont slider" id="reviews" dir="ltr">
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-1.png" alt="student profile">
+                            <h4>دانشجو لیلا موسوی</h4>
+                        </div>
+                        <p class="comment">
+                            عالی بود :) <br>
+                            خیلی ممنون از دوره های خوبتون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-2.png" alt="student profile">
+                            <h4>دانشجو رضا بابایی</h4>
+                        </div>
+                        <p class="comment">
+                            دمتون گرم خیلی ممنون هم از استاد ها راضی هستم و هم از درس دادنشون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-1.png" alt="student profile">
+                            <h4>دانشجو لیلا موسوی</h4>
+                        </div>
+                        <p class="comment">
+                            عالی بود :) <br>
+                            خیلی ممنون از دوره های خوبتون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-2.png" alt="student profile">
+                            <h4>دانشجو رضا بابایی</h4>
+                        </div>
+                        <p class="comment">
+                            دمتون گرم خیلی ممنون هم از استاد ها راضی هستم و هم از درس دادنشون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-1.png" alt="student profile">
+                            <h4>دانشجو لیلا موسوی</h4>
+                        </div>
+                        <p class="comment">
+                            عالی بود :) <br>
+                            خیلی ممنون از دوره های خوبتون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                    <div class="review hover">
+                        <div class="student">
+                            <img src="./images/student-2.png" alt="student profile">
+                            <h4>دانشجو رضا بابایی</h4>
+                        </div>
+                        <p class="comment">
+                            دمتون گرم خیلی ممنون هم از استاد ها راضی هستم و هم از درس دادنشون
+                        </p>
+                        <img src="./images/stars-2.png" alt="stars picture">
+                    </div>
+                </div>
+                <div class="slider-nav" dir="ltr">
+                    <div class="slider-nav-item"></div>
+                    <div class="slider-nav-item"></div>
+                    <div class="slider-nav-item"></div>
+                    <div class="slider-nav-item"></div>
+                    <div class="slider-nav-item"></div>
+                    <div class="slider-nav-item"></div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" data-aos="fade-up">
+            <article>
+                <div class="bio">
+                    <img src="./images/LOGO.png" alt="hamgam logo">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+                <div class="links">
+                    <div class="quick-access">
+                        <strong>دسترسی سریع</strong>
+                        <ul>
+                            <li><a href="#courses">دوره ها</a></li>
+                            <li><a href="/">حساب کاربری</a></li>
+                            <li><a href="#about">درباره ما</a></li>
+                            <li><a href="#contact">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <strong>اطلاعات تماس</strong>
+                        <ul>
+                            <li><a href="/">تلفن: ۰۹۱۲۳۴۵۶۷۸۹</a></li>
+                            <li><a href="/">تلگرام: ۰۹۱۲۳۴۵۶۷۸۹</a></li>
+                            <li><a href="/">واتساپ: ۰۹۱۲۳۴۵۶۷۸۹</a></li>
+                            <li><a href="/">ایمیل: hamgam@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="e-namad">
+                    <a href="">
+                        <img src="./images/e-namad.png" alt="نماد اعتماد الکترونیکی" title="نماد اعتماد الکترونیکی">
+                    </a>
+                </div>
+            </article>
+            <aside class="copy-right">
+                <p>تمام حقوق اين وبسايت متعلق به موسسه همگام است.</p>
+            </aside>
+        </footer>
+    </main>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ataMayel/Slider.js/Slider.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ataMayel/Typing.js/typing.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
