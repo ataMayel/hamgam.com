@@ -156,11 +156,11 @@ footer p {
     justify-content: center;
     align-items: center;
     min-height: 56px;
-    padding: 5px 1rem;
+    padding: 5px;
 }
 
 .copy-right p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .first {

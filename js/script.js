@@ -55,6 +55,7 @@ AOS.init()
 const courses = new Slider('#course-slider', {
     slides: '.course',
     gap: 40,
+    rtl: true,
     loop: true,
     autoPlay: {
         delay: 4500
@@ -65,6 +66,7 @@ const reviews = new Slider('#reviews', {
     slides: '.review',
     gap: 20,
     loop: true,
+    rtl: true,
     autoPlay: {
         delay: 3000
     },
